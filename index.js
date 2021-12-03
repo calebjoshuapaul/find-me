@@ -32,7 +32,7 @@ async function serveData() {
 &width=550
 &height=350
 &view=IN
-&key=${MAP_API_KEY}`;
+&key=${process.env.MAP_API_KEY}`;
 
   for (let i = 0; i < data.length; i++) {
     const listElement = document.createElement("li");
