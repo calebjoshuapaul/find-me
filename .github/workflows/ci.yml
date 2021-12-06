@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MAP_API_KEY: ${{secrets.MAP_API_KEY}}
 
     steps:
       - name: Checkout
@@ -17,8 +19,6 @@ jobs:
         run: |
           npm install
           npm run-script build
-        env:
-          MAP_API_KEY: ${{secrets.MAP_API_KEY}}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
