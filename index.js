@@ -6,8 +6,6 @@ const apiEndPoint = "https://api.tomtom.com/map/1/staticimage";
 
 button.addEventListener("click", serveData);
 
-console.log(process.env.AUTH_TOKEN);
-
 async function fetchData() {
   const response = fetch("https://find-me-worker.calebjoshuapaul.workers.dev/")
     .then((response) => response.json())
@@ -28,19 +26,19 @@ async function serveData() {
 &style=main
 &format=png
 &zoom=14
-&center=${data[0].longitude},${data[0].latitude}
+&center=${data[1].longitude},${data[1].latitude}
 &width=550
 &height=350
 &view=IN
 &key=${process.env.MAP_API_KEY}`;
 
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < data[0].length; i++) {
     const listElement = document.createElement("li");
-    listElement.innerHTML = `<h2>${data[i].name}</h2>
-    <p>Its is located in <strong>${data[i].address}</strong> and ${Math.floor(
-      data[i].distance
-    )}km far.</p>
-    <p>Contact: ${data[i].contact}</p>`;
+    listElement.innerHTML = `<h2>${data[0][i].name}</h2>
+    <p>Its is located in <strong>${
+      data[0][i].address
+    }</strong> and ${Math.floor(data[0][i].distance)}km far.</p>
+    <p>Contact: ${data[0][i].contact}</p>`;
 
     list.append(listElement);
   }
