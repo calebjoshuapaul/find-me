@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "build": "parcel index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/calebjoshuapaul/find-me.git"
@@ -14,6 +17,6 @@
   },
   "homepage": "https://github.com/calebjoshuapaul/find-me#readme",
   "devDependencies": {
-    "esbuild": "^0.14.2"
+    "parcel": "^2.0.1"
   }
 }
