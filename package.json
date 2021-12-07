@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/calebjoshuapaul/find-me/issues"
   },
-  "homepage": "https://github.com/calebjoshuapaul/find-me#readme"
+  "homepage": "https://github.com/calebjoshuapaul/find-me#readme",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
