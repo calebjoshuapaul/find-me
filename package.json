@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build",
-    "deploy": "npm run build && gh-pages -d dist"
+    "build": "parcel build index.html --out-dir build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,7 @@
     "url": "https://github.com/calebjoshuapaul/find-me/issues"
   },
   "homepage": "https://github.com/calebjoshuapaul/find-me",
-  "dependencies": {
-    "gh-pages": "^3.2.3"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
