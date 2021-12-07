@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/calebjoshuapaul/find-me/issues"
   },
-  "homepage": "https://github.com/calebjoshuapaul/find-me#readme",
-  "devDependencies": {
-    "parcel": "^2.0.1"
-  }
+  "homepage": "https://github.com/calebjoshuapaul/find-me#readme"
 }
