@@ -1,5 +1,3 @@
-import * as dotenv from "dotenv";
-dotenv.config();
 const button = document.querySelector(".btn");
 const content = document.querySelector(".content-section");
 const mapImage = document.querySelector("img");
