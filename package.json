@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
@@ -15,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/calebjoshuapaul/find-me/issues"
   },
-  "homepage": "https://github.com/calebjoshuapaul/find-me#readme",
+  "homepage": "https://github.com/calebjoshuapaul/find-me",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
