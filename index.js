@@ -31,7 +31,7 @@ async function serveData() {
 &width=550
 &height=350
 &view=IN
-&key=${process.env.API_KEY}`;
+&key=${process.env.API_KEY || "TCnZUs1rYsQTICGNxyHsY9STZ3ylyfpD"}`;
 
   for (let i = 0; i < data[0].length; i++) {
     const listElement = document.createElement("li");
