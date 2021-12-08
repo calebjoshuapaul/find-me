@@ -3,6 +3,7 @@ const content = document.querySelector(".content-section");
 const mapImage = document.querySelector("img");
 const list = document.querySelector(".list");
 const apiEndPoint = "https://api.tomtom.com/map/1/staticimage";
+require("dotenv").config();
 
 button.addEventListener("click", serveData);
 
@@ -30,7 +31,7 @@ async function serveData() {
 &width=550
 &height=350
 &view=IN
-&key=TCnZUs1rYsQTICGNxyHsY9STZ3ylyfpD`;
+&key=${process.env.API_KEY}`;
 
   for (let i = 0; i < data[0].length; i++) {
     const listElement = document.createElement("li");
