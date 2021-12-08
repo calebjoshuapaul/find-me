@@ -1,11 +1,11 @@
-const button = document.querySelector(".btn");
+// const button = document.querySelector(".btn");
 const content = document.querySelector(".content-section");
 const mapImage = document.querySelector("img");
 const list = document.querySelector(".list");
 const apiEndPoint = "https://api.tomtom.com/map/1/staticimage";
 // require("dotenv").config();
 
-button.addEventListener("click", serveData);
+window.addEventListener("load", serveData);
 
 async function fetchData() {
   const response = fetch("https://find-me-worker.calebjoshuapaul.workers.dev/")
@@ -35,6 +35,7 @@ async function serveData() {
 
   for (let i = 0; i < data[0].length; i++) {
     const listElement = document.createElement("li");
+    listElement.setAttribute("class", "list-group-item");
     listElement.innerHTML = `<h2>${data[0][i].name}</h2>
     <p>Its is located in <strong>${
       data[0][i].address
