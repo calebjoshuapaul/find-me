@@ -39,7 +39,7 @@ async function serveData() {
     listElement.innerHTML = `<h2>${data[0][i].name}</h2>
     <p>Its is located in <strong>${
       data[0][i].address
-    }</strong> and ${Math.floor(data[0][i].distance)}km far.</p>
+    }</strong> and ${Math.floor(data[0][i].distance)}m far.</p>
     <p>Contact: ${data[0][i].contact}</p>`;
 
     list.append(listElement);
