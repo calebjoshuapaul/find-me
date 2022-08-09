@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/calebjoshuapaul/find-me/issues"
   },
-  "homepage": "https://github.com/calebjoshuapaul/find-me#readme",
-  "dependencies": {
-    "dotenv": "^10.0.0"
-  }
+  "homepage": "https://github.com/calebjoshuapaul/find-me#readme"
 }
